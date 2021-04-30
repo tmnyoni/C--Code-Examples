@@ -12,10 +12,10 @@ public partial class Cordinates
     private (double x, double y) point = (x: 0, y: 0);
 
 
-    public Cordinates()
+    public Cordinates(int x, int y)
     {
-        point.x = 10;
-        point.y = 6;
+        point.x = x;
+        point.y = y;
     }
 }
 
@@ -31,7 +31,7 @@ public class Test
 {
     public static void Main(String[] args)
     {
-        Cordinates cords = new Cordinates();
+        Cordinates cords = new Cordinates(10, 2);
         cords.printCordinates();
     }
 }
